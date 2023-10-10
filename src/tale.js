@@ -2,31 +2,35 @@
 // Стрелочная функция c конструцией switch
 history_kolobok = (character_names) => {
     switch (character_names) {
-        case 'дедушки':
-        case 'зайчика':
-            return `Я от ${character_names} ушёл!`
-        case 'лисицы':
-            return `А от ${character_names} не ушёл!`
+        case 'дедушка':
+            return `Я от дедушки ушёл!`
+        case 'заяц':
+            return `Я от зайца ушёл!`
+        case 'лиса':
+            return `А от лисицы не ушёл!`
         default:
-            return `Кто вы такой ${character_names}?`
+            return `${character_names} - я не видел!`
     }
 }
 */
 
 // Функция c конструкцией (if, if else)
 function history_kolobok(character_names) {
-    if (character_names === "дедушки" || character_names === "зайчика") {
-        return `Я от ${character_names} ушёл!`
-    } else if (character_names === "лисицы") {
-        return `А от ${character_names} не ушёл!`
+    if (character_names === "дедушка") {
+        return `Я от дедушки ушёл!`
+    } else if (character_names === "заяц") {
+        return `Я от зайца ушёл!`
+    } else if (character_names === "лиса") {
+        return `А от лисицы не ушёл!`
     } else {
-        return `Кто вы такой ${character_names}?`
+        return `${character_names} - я не видел!`
     }
 }
+
 console.log(`Задание №1`)
-console.log(history_kolobok("дедушки"))
-console.log(history_kolobok("зайчика"))
-console.log(history_kolobok("лисицы"))
+console.log(history_kolobok("дедушка"))
+console.log(history_kolobok("заяц"))
+console.log(history_kolobok("лиса"))
 console.log(history_kolobok("кракозябра"))
 
 /*
@@ -38,7 +42,7 @@ newYear = (character_names) => {
         case 'Снегурочка':
             return `${character_names}! ${character_names}! ${character_names}!`
         default:
-            return `Кто вы такой ${character_names}?`
+            return `А ${character_names}, мы не звали!`
     }
 }
 */
@@ -48,7 +52,7 @@ function newYear(character_names) {
     if (character_names === "Дед Мороз" || character_names === "Снегурочка") {
         return `${character_names}! ${character_names}! ${character_names}!`
     } else {
-        return `Кто вы такой ${character_names}?`
+        return `А ${character_names}, мы не звали!`
     }
 }
 
