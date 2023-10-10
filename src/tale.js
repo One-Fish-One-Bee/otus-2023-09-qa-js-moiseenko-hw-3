@@ -4,13 +4,11 @@ history_kolobok = (character_names) => {
     switch (character_names) {
         case 'дедушки':
         case 'зайчика':
-            console.log(`Я от ${character_names} ушёл!`)
-            break;
+            return `Я от ${character_names} ушёл!`
         case 'лисицы':
-            console.log(`А от ${character_names} не ушёл!`)
-            break;
+            return `А от ${character_names} не ушёл!`
         default:
-            console.log(`Кто вы такой ${character_names}?`)
+            return `Кто вы такой ${character_names}?`
     }
 }
 */
@@ -18,31 +16,29 @@ history_kolobok = (character_names) => {
 // Функция c конструкцией (if, if else)
 function history_kolobok(character_names) {
     if (character_names === "дедушки" || character_names === "зайчика") {
-        console.log(`Я от ${character_names} ушёл!`)
+        return `Я от ${character_names} ушёл!`
     } else if (character_names === "лисицы") {
-        console.log(`А от ${character_names} не ушёл!`)
+        return `А от ${character_names} не ушёл!`
     } else {
-        console.log(`Кто вы такой ${character_names}?`)
+        return `Кто вы такой ${character_names}?`
     }
 }
-
-history_kolobok("дедушки")
-history_kolobok("зайчика")
-history_kolobok("лисицы")
-history_kolobok("кракозябра")
+console.log(`Задание №1`)
+console.log(history_kolobok("дедушки"))
+console.log(history_kolobok("зайчика"))
+console.log(history_kolobok("лисицы"))
+console.log(history_kolobok("кракозябра"))
 
 /*
 // Стрелочная функция c конструцией switch
 newYear = (character_names) => {
     switch (character_names) {
         case 'Дед Мороз':
-            console.log(`${character_names}! ${character_names}! ${character_names}!`)
-            break;
+            return `${character_names}! ${character_names}! ${character_names}!`
         case 'Снегурочка':
-            console.log(`${character_names}! ${character_names}! ${character_names}!`)
-            break;
+            return `${character_names}! ${character_names}! ${character_names}!`
         default:
-            console.log(`Кто вы такой ${character_names}?`)
+            return `Кто вы такой ${character_names}?`
     }
 }
 */
@@ -50,12 +46,14 @@ newYear = (character_names) => {
 // Функция c конструкцией (if, else)
 function newYear(character_names) {
     if (character_names === "Дед Мороз" || character_names === "Снегурочка") {
-        console.log(`${character_names}! ${character_names}! ${character_names}!`)
+        return `${character_names}! ${character_names}! ${character_names}!`
     } else {
-        console.log(`Кто вы такой ${character_names}?`)
+        return `Кто вы такой ${character_names}?`
     }
 }
 
-newYear("Дед Мороз")
-newYear("Снегурочка")
-newYear("Буратино")
+//пустая строка
+console.log(`Задание №2`)
+console.log(newYear("Дед Мороз"))
+console.log(newYear("Снегурочка"))
+console.log(newYear("Буратино"))
