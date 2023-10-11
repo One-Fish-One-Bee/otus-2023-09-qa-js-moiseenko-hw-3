@@ -5,7 +5,7 @@ history_kolobok = (character_names) => {
         case 'дедушка':
             return `Я от дедушки ушёл!`
         case 'заяц':
-            return `Я от зайца ушёл!`
+            return `Я от зайчика ушёл!`
         case 'лиса':
             return `А от лисицы не ушёл!`
         default:
@@ -19,7 +19,7 @@ function history_kolobok(character_names) {
     if (character_names === "дедушка") {
         return `Я от дедушки ушёл!`
     } else if (character_names === "заяц") {
-        return `Я от зайца ушёл!`
+        return `Я от зайчика ушёл!`
     } else if (character_names === "лиса") {
         return `А от лисицы не ушёл!`
     } else {
